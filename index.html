@@ -17,6 +17,54 @@
 
 <body>
 
+    <!-- Desktop -->
+    <div class="desktop">
+        <div class="desktop__">
+            <!-- Start -->
+            <div class="desktop__start_logo_box">
+                <img src="images/desktop/left-A-desktop.svg" alt="left-A-desktop" class="desktop__start_logo_box--left">
+                <img src="images/desktop/right-tm-desktop.svg" alt="right-tm-desktop" class="desktop__start_logo_box--right">
+                <img src="images/desktop/ccept-desktop.svg" alt="ccept-desktop" class="desktop__start_logo_box--center">
+            </div>
+        </div>
+
+        <!-- Vector -->
+        <div class="desktop__vector_box">
+            <img src="images/desktop/Vector-desktop.svg" alt="vector-desktop" class="desktop__vector_box--vector">
+            
+            <div class="desktop__vector_box--click-text">
+                <div class="desktop__vector_box--borders">
+                    <img src="images/desktop/1-desktop.svg" alt="1-desktop" class="desktop__vector_box--border-1">
+                    <img src="images/desktop/2-desktop.svg" alt="2-desktop" class="desktop__vector_box--border-2">
+                    <img src="images/desktop/3-desktop.svg" alt="3-desktop" class="desktop__vector_box--border-3">
+                    <img src="images/desktop/4-desktop.svg" alt="4-desktop" class="desktop__vector_box--border-4">
+                    <span class="desktop__vector_box--click-text--text">Click To Change</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action -->
+        <div class="desktop__action_box">
+            <img src="images/desktop/Action-desktop.svg" alt="action-desktop" class="desktop__action_box--action">
+            <div class="desktop__action_box--logo-and-text">
+                <img src="images/desktop/Accept-black-desktop.svg" alt="accept-black-desktop" class="desktop__action_box--accept">
+                <span class="desktop__action_box--text">Coming Soon</span>
+                <p class="desktop__action_box--p">
+                    We strive to build an ecosystem where businesses and people thrive together. By seamlessly
+                    integrating business growth with human potential, we foster a culture where every individual is
+                    empowered to succeed and evolve-driving lasting change and shared success for all. <br /> <br />
+                    ACCEPT sees the future of HR not as a service, but as a movement—one that redefines leadership,
+                    culture, and purpose in every sector it touches.
+                </p>
+            </div>
+            <div class="desktop__action_box--info_background"></div>
+        </div>
+
+        <footer class="desktop__footer">
+            <p class="desktop__footer--text">© 2025 Accept HR Service Provider</p>
+        </footer>
+    </div>
+
     <!-- Mobile -->
 
     <div class="mobile">
@@ -76,18 +124,35 @@
         <footer class="mobile__footer">
             <p class="mobile__footer--text">© 2025 Accept HR Service Provider</p>
         </footer>
+    </div>
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const clickText = document.querySelector('.mobile__vector_box--click-text--text');
-                const actionBox = document.querySelector('.mobile__action_box');
+                // Mobile functionality
+                const clickTextMobile = document.querySelector('.mobile__vector_box--click-text--text');
+                const actionBoxMobile = document.querySelector('.mobile__action_box');
 
-                clickText.addEventListener('click', function () {
-                    actionBox.classList.add('show');
-                    setTimeout(() => {
-                        actionBox.classList.add('animate');
-                    }, 50);
-                });
+                if (clickTextMobile && actionBoxMobile) {
+                    clickTextMobile.addEventListener('click', function () {
+                        actionBoxMobile.classList.add('show');
+                        setTimeout(() => {
+                            actionBoxMobile.classList.add('animate');
+                        }, 50);
+                    });
+                }
+
+                // Desktop functionality
+                const clickTextDesktop = document.querySelector('.desktop__vector_box--click-text--text');
+                const actionBoxDesktop = document.querySelector('.desktop__action_box');
+
+                if (clickTextDesktop && actionBoxDesktop) {
+                    clickTextDesktop.addEventListener('click', function () {
+                        actionBoxDesktop.classList.add('show');
+                        setTimeout(() => {
+                            actionBoxDesktop.classList.add('animate');
+                        }, 50);
+                    });
+                }
             });
         </script>
 

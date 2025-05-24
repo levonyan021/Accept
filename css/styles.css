@@ -15,6 +15,22 @@ body {
     display: none;
 }
 
+.desktop {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+}
+
 html {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
