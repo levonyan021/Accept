@@ -1,0 +1,326 @@
+@media (max-width: 767px) {
+    .mobile {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: relative;
+
+    }
+
+    .mobile__ {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Start */
+    .mobile__start_logo_box {
+        width: 54px;
+        height: 57px;
+        background-color: transparent;
+        position: relative;
+        animation: addWidthToBox .5s ease-in-out forwards;
+        animation-delay: 2s;
+
+    }
+
+    .mobile__start_logo_box img {
+        position: absolute;
+    }
+
+    .mobile__start_logo_box img:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    .mobile__start_logo_box img:nth-child(2) {
+        bottom: 0;
+        right: 0;
+    }
+
+    .mobile__start_logo_box img:nth-child(3) {
+        bottom: 6px;
+        left: 40.2px;
+        opacity: 0;
+        animation: showCceptLogo .5s ease-in-out forwards;
+        animation-delay: 2s;
+    }
+
+    @keyframes addWidthToBox {
+        from {
+            width: 54px;
+        }
+
+        to {
+            width: 168px;
+        }
+    }
+
+    @keyframes showCceptLogo {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+    }
+
+    /* End Starting, Start Vectoring */
+
+    .mobile__vector_box {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .mobile__vector_box .mobile__vector_box--vector {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        animation: moveVector .5s ease-in-out forwards;
+        animation-delay: 2s;
+    }
+
+    @keyframes moveVector {
+        from {
+            bottom: -100px;
+        }
+
+        to {
+            bottom: 93px;
+        }
+
+    }
+
+    .mobile__vector_box--click-text {
+        width: 136px;
+        height: 31px;
+        position: absolute;
+        /* bottom: 143px; */
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        animation: moveClickText .5s ease-in-out forwards;
+        animation-delay: 2.5s;
+        color: #fff;
+        transition: .5s;
+    }
+
+    .mobile__vector_box--click-text:hover {
+        cursor: pointer;
+        color: #37B46E;
+    }
+
+    .mobile__vector_box--borders {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mobile__vector_box--border-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    .mobile__vector_box--border-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+
+    .mobile__vector_box--border-3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    .mobile__vector_box--border-4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+
+    .mobile__vector_box--borders span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        font-size: 18px;
+        left: 19px;
+        top: 6px;
+    }
+
+    @keyframes moveClickText {
+        from {
+            bottom: -100px;
+        }
+
+        to {
+            bottom: 143px;
+        }
+
+    }
+
+    /* Action */
+
+    .mobile__action_box {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        display: none;
+    }
+
+    .mobile__action_box.show {
+        display: block;
+    }
+
+    .mobile__action_box .mobile__action_box--action {
+        position: absolute;
+        bottom: -2000px;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .mobile__action_box.animate .mobile__action_box--action {
+        animation: moveAction 2s ease-in-out forwards;
+        z-index: 1;
+    }
+
+    @keyframes moveAction {
+        from {
+            bottom: -2000px;
+        }
+
+        to {
+            bottom: 0;
+        }
+
+    }
+
+    .mobile__action_box--logo-and-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 153px;
+        height: 40.2px;
+        z-index: 2;
+        animation: addWidthToActionBox 0.5s ease-in-out forwards;
+        animation-delay: 3s;
+    }
+
+    .mobile__action_box--accept {
+        width: 153px;
+        height: 40.2px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .mobile__action_box.animate .mobile__action_box--accept {
+        animation: fadeInAccept 0.8s ease-in-out forwards;
+        animation-delay: 2s;
+    }
+
+    @keyframes fadeInAccept {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes addWidthToActionBox {
+        from {
+            width: 153px;
+        }
+
+        to {
+            width: 257px;
+        }
+
+    }
+
+    .mobile__action_box--text {
+        color: #37B46E;
+        width: 94px;
+        height: 19px;
+        font-size: 16px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .mobile__action_box.animate .mobile__action_box--text {
+        animation: showText 0.5s ease-in-out forwards;
+        animation-delay: 3.5s;
+    }
+
+    @keyframes showText {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .mobile__action_box--p {
+        text-align: justify;
+        font-size: 16px;
+        width: 100%;
+        height: 247px;
+        opacity: 0;
+    }
+
+    .mobile__action_box.animate .mobile__action_box--p {
+        animation: showText 0.5s ease-in-out forwards;
+        animation-delay: 3.5s;
+    }
+
+    .mobile__action_box.animate ~ .mobile__footer {
+        background-color: black;
+        color: white;
+    }
+
+    .mobile__action_box--info_background{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: #B3B3B3;
+        z-index: 1;
+        opacity: 0;
+    }
+
+        .mobile__action_box.animate .mobile__action_box--info_background {
+        animation: showText 0.5s ease-in-out forwards;
+        animation-delay: 3.5s;
+    }
+}

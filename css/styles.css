@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'NeueMontrealRegular';
+    src: url('../fonts/NeueMontrealRegular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'NeueMontrealRegular', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #B3B3B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
