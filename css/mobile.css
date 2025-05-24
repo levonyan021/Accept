@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
     .mobile {
         width: 100vw;
         height: 100vh;
@@ -161,7 +161,7 @@
         height: 100%;
         position: absolute;
         font-size: 18px;
-        left: 19px;
+        left: 5px;
         top: 6px;
     }
 
@@ -323,4 +323,4 @@
         animation: showText 0.5s ease-in-out forwards;
         animation-delay: 3.5s;
     }
-}
+/* } */
