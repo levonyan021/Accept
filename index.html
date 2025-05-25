@@ -128,6 +128,24 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                // Change right-tm-desktop image when animation starts
+                setTimeout(() => {
+                    const rightTmDesktop = document.querySelector('.desktop__start_logo_box--right');
+                    if (rightTmDesktop) {
+                        rightTmDesktop.src = 'images/desktop/right-tm-desktop-big.svg';
+                        rightTmDesktop.alt = 'right-tm-desktop-big';
+                    }
+                }, 2000); // 2s delay to match animation start
+
+                // Change right-tm-mobile image when animation starts
+                setTimeout(() => {
+                    const rightTmMobile = document.querySelector('.mobile__start_logo_box--right');
+                    if (rightTmMobile) {
+                        rightTmMobile.src = 'images/mobile/right-tm-mobile-big.svg';
+                        rightTmMobile.alt = 'right-tm-mobile-big';
+                    }
+                }, 2000); // 2s delay to match animation start
+
                 // Mobile functionality
                 const clickTextMobile = document.querySelector('.mobile__vector_box--click-text--text');
                 const actionBoxMobile = document.querySelector('.mobile__action_box');
