@@ -337,4 +337,28 @@
             opacity: 1;
         }
     }
+
+    .mobile__vector_box.move-up .mobile__vector_box--vector {
+        animation: moveVectorUpMobile 1s ease-in-out forwards;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes moveVectorUpMobile {
+        from {
+            bottom: 93px;
+        }
+        to {
+            bottom: 1000px;
+        }
+    }
+
+    .mobile__footer {
+        width: 100vw;
+        height: 200px;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
 }

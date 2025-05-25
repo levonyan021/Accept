@@ -149,12 +149,14 @@
                 // Mobile functionality
                 const clickTextMobile = document.querySelector('.mobile__vector_box--click-text--text');
                 const actionBoxMobile = document.querySelector('.mobile__action_box');
+                const vectorBoxMobile = document.querySelector('.mobile__vector_box');
 
                 if (clickTextMobile && actionBoxMobile) {
                     clickTextMobile.addEventListener('click', function () {
                         actionBoxMobile.classList.add('show');
                         setTimeout(() => {
                             actionBoxMobile.classList.add('animate');
+                            vectorBoxMobile.classList.add('move-up');
                         }, 50);
                     });
                 }
@@ -162,12 +164,14 @@
                 // Desktop functionality
                 const clickTextDesktop = document.querySelector('.desktop__vector_box--click-text--text');
                 const actionBoxDesktop = document.querySelector('.desktop__action_box');
+                const vectorBoxDesktop = document.querySelector('.desktop__vector_box');
 
                 if (clickTextDesktop && actionBoxDesktop) {
                     clickTextDesktop.addEventListener('click', function () {
                         actionBoxDesktop.classList.add('show');
                         setTimeout(() => {
                             actionBoxDesktop.classList.add('animate');
+                            vectorBoxDesktop.classList.add('move-up');
                         }, 50);
                     });
                 }

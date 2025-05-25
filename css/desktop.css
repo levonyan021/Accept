@@ -330,4 +330,17 @@
         align-items: center;
         font-size: 24px;
     }
+
+    .desktop__vector_box.move-up .desktop__vector_box--vector {
+        animation: moveVectorUpDesktop 1s ease-in-out forwards;
+    }
+
+    @keyframes moveVectorUpDesktop {
+        from {
+            bottom: 113px;
+        }
+        to {
+            bottom: 1000px;
+        }
+    }
 }
