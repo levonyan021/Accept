@@ -20,8 +20,8 @@
         height: 149px;
         background-color: transparent;
         position: relative;
-        animation: addWidthToBoxDesktop .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: addWidthToBoxDesktop .25s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     .desktop__start_logo_box img {
@@ -42,8 +42,8 @@
         top: 39px;
         left: 111px;
         opacity: 0;
-        animation: showCceptLogoDesktop .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: showCceptLogoDesktop .25s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes addWidthToBoxDesktop {
@@ -81,8 +81,8 @@
         left: 50%;
         transform: translateX(-50%);
         object-fit: cover;
-        animation: moveVectorDesktop .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: moveVectorDesktop .25s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes moveVectorDesktop {
@@ -102,10 +102,10 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
-        animation: moveClickTextDesktop .5s ease-in-out forwards;
-        animation-delay: 2.5s;
+        animation: moveClickTextDesktop .25s ease-in-out forwards;
+        animation-delay: 1.25s;
         color: #fff;
-        transition: .5s;
+        transition: .25s;
     }
 
     .desktop__vector_box--click-text:hover {
@@ -191,7 +191,7 @@
     }
 
     .desktop__action_box.animate .desktop__action_box--action {
-        animation: moveActionDesktop 2s ease-in-out forwards;
+        animation: moveActionDesktop 1s ease-in-out forwards;
         z-index: 1;
     }
 
@@ -212,8 +212,8 @@
         width: 419px;
         height: 110px;
         z-index: 2;
-        animation: addWidthToActionBoxDesktop 0.5s ease-in-out forwards;
-        animation-delay: 3s;
+        animation: addWidthToActionBoxDesktop 0.25s ease-in-out forwards;
+        animation-delay: 1.5s;
     }
 
     .desktop__action_box--accept {
@@ -224,8 +224,8 @@
     }
 
     .desktop__action_box.animate .desktop__action_box--accept {
-        animation: fadeInAcceptDesktop 0.8s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: fadeInAcceptDesktop 0.4s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes fadeInAcceptDesktop {
@@ -259,8 +259,8 @@
     }
 
     .desktop__action_box.animate .desktop__action_box--text {
-        animation: showTextDesktop 0.5s ease-in-out forwards;
-        animation-delay: 3.5s;
+        animation: showTextDesktop 0.25s ease-in-out forwards;
+        animation-delay: 1.75s;
     }
 
     @keyframes showTextDesktop {
@@ -282,8 +282,8 @@
     }
 
     .desktop__action_box.animate .desktop__action_box--p {
-        animation: showTextDesktop 0.5s ease-in-out forwards;
-        animation-delay: 3.5s;
+        animation: showTextDesktop 0.25s ease-in-out forwards;
+        animation-delay: 1.75s;
     }
 
     .desktop__action_box--info_background {
@@ -298,8 +298,8 @@
     }
 
     .desktop__action_box.animate .desktop__action_box--info_background {
-        animation: moveInfoBackgroundDesktop 2s ease-in-out forwards;
-        animation-delay: 0.2s;
+        animation: moveInfoBackgroundDesktop 1s ease-in-out forwards;
+        animation-delay: 0.1s;
     }
 
     @keyframes moveInfoBackgroundDesktop {
@@ -319,6 +319,8 @@
     .desktop__action_box.animate ~ .desktop__footer {
         background-color: black;
         color: white;
+        transition: background-color 0s ease-in-out;
+        transition-delay: 1s;
     }
 
     .desktop__footer {
@@ -332,14 +334,16 @@
     }
 
     .desktop__vector_box.move-up .desktop__vector_box--vector {
-        animation: moveVectorUpDesktop 1s ease-in-out forwards;
+        animation: moveVectorUpDesktop 0.5s ease-in-out forwards;
+        animation-delay: 0.1s;
+        animation-fill-mode: both;
     }
 
     @keyframes moveVectorUpDesktop {
-        from {
+        0% {
             bottom: 113px;
         }
-        to {
+        100% {
             bottom: 1000px;
         }
     }

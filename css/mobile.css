@@ -21,8 +21,8 @@
         height: 57px;
         background-color: transparent;
         position: relative;
-        animation: addWidthToBox .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: addWidthToBox .25s ease-in-out forwards;
+        animation-delay: 1s;
 
     }
 
@@ -44,8 +44,8 @@
         bottom: 6px;
         left: 40.2px;
         opacity: 0;
-        animation: showCceptLogo .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: showCceptLogo .25s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes addWidthToBox {
@@ -87,8 +87,8 @@
         left: 50%;
         transform: translateX(-50%);
         object-fit: cover;
-        animation: moveVector .5s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: moveVector .25s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes moveVector {
@@ -106,15 +106,14 @@
         width: 136px;
         height: 31px;
         position: absolute;
-        /* bottom: 143px; */
         bottom: -100px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
-        animation: moveClickText .5s ease-in-out forwards;
-        animation-delay: 2.5s;
+        animation: moveClickText .25s ease-in-out forwards;
+        animation-delay: 1.25s;
         color: #fff;
-        transition: .5s;
+        transition: .25s;
     }
 
     .mobile__vector_box--click-text:hover {
@@ -203,7 +202,7 @@
     }
 
     .mobile__action_box.animate .mobile__action_box--action {
-        animation: moveAction 2s ease-in-out forwards;
+        animation: moveAction 1s ease-in-out forwards;
         z-index: 1;
     }
 
@@ -226,8 +225,8 @@
         width: 153px;
         height: 40.2px;
         z-index: 2;
-        animation: addWidthToActionBox 0.5s ease-in-out forwards;
-        animation-delay: 3s;
+        animation: addWidthToActionBox 0.25s ease-in-out forwards;
+        animation-delay: 1.5s;
     }
 
     .mobile__action_box--accept {
@@ -238,8 +237,8 @@
     }
 
     .mobile__action_box.animate .mobile__action_box--accept {
-        animation: fadeInAccept 0.8s ease-in-out forwards;
-        animation-delay: 2s;
+        animation: fadeInAccept 0.4s ease-in-out forwards;
+        animation-delay: 1s;
     }
 
     @keyframes fadeInAccept {
@@ -276,8 +275,8 @@
     }
 
     .mobile__action_box.animate .mobile__action_box--text {
-        animation: showText 0.5s ease-in-out forwards;
-        animation-delay: 3.5s;
+        animation: showText 0.25s ease-in-out forwards;
+        animation-delay: 1.75s;
     }
 
     @keyframes showText {
@@ -299,13 +298,15 @@
     }
 
     .mobile__action_box.animate .mobile__action_box--p {
-        animation: showText 0.5s ease-in-out forwards;
-        animation-delay: 3.5s;
+        animation: showText 0.25s ease-in-out forwards;
+        animation-delay: 1.75s;
     }
 
     .mobile__action_box.animate ~ .mobile__footer {
         background-color: black;
         color: white;
+        transition: background-color 0s ease-in-out;
+        transition-delay: 1s;
     }
 
     .mobile__action_box--info_background{
@@ -320,8 +321,8 @@
     }
 
     .mobile__action_box.animate .mobile__action_box--info_background {
-        animation: moveInfoBackgroundMobile 2s ease-in-out forwards;
-        animation-delay: 0.2s;
+        animation: moveInfoBackgroundMobile 1s ease-in-out forwards;
+        animation-delay: 0.1s;
     }
 
     @keyframes moveInfoBackgroundMobile {
@@ -339,15 +340,16 @@
     }
 
     .mobile__vector_box.move-up .mobile__vector_box--vector {
-        animation: moveVectorUpMobile 1s ease-in-out forwards;
-        animation-delay: 0.4s;
+        animation: moveVectorUpMobile 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+        animation-fill-mode: both;
     }
 
     @keyframes moveVectorUpMobile {
-        from {
+        0% {
             bottom: 93px;
         }
-        to {
+        100% {
             bottom: 1000px;
         }
     }
