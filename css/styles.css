@@ -1,50 +1,239 @@
-@font-face {
-    font-family: 'NeueMontrealRegular';
-    src: url('../fonts/NeueMontrealRegular.ttf') format('truetype');
-}
-
-body {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    font-family: 'NeueMontrealRegular', sans-serif;
 }
 
-.mobile {
-    display: none;
-}
-
-.desktop {
-    display: none;
-}
-
-@media (max-width: 1023px) {
-    .mobile {
-        display: block;
-    }
-}
-
-@media (min-width: 1024px) {
-    .desktop {
-        display: block;
-    }
-}
-
-html {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-}
-
-html::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-}
-
-footer{
-    width: 100vw;
-    height: 100px;
-    background-color: #B3B3B3;
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    width: 100%;
 }
+
+.centered-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: none;
+}
+
+.vector-image {
+    display: none;
+}
+
+/* Hide scrollbars for all browsers */
+html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    overflow: auto;
+}
+
+/* Hide scrollbars for Chrome, Safari and Opera */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure content still scrolls but scrollbar is hidden */
+* {
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Mobile - 360px */
+@media (max-width: 767px) {
+    .mobile-image {
+        display: block;
+        width: 251px;
+    }
+
+    .desktop-4k-vector {
+        display: block;
+        width: 8px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .desktop-text-vector {
+        display: block;
+        width: 193px;
+        position: absolute;
+        bottom: 49px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text{
+        width: 242px;
+    }
+}
+
+/* Tablet Vertical - 800px */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .tablet-vertical-image {
+        display: block;
+        width: 517px;
+    }
+
+    .desktop-4k-vector {
+        display: block;
+        width: 16px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .desktop-text-vector {
+        display: block;
+        width: 217px;
+        position: absolute;
+        bottom: 88px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text{
+        width: 272px;
+    }
+}
+
+/* Tablet Horizontal - 1280px */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .tablet-horizontal-image {
+        display: block;
+        width: 507px;
+    }
+
+    .desktop-4k-vector {
+        display: block;
+        width: 19px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .desktop-text-vector {
+        display: block;
+        width: 241px;
+        position: absolute;
+        bottom: 92px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text{
+        width: 272px;
+    }
+
+}
+
+/* Desktop - 1920px */
+@media (min-width: 1024px) and (max-width: 3839px) {
+    .desktop-image {
+        display: block;
+        width: 719px;
+    }
+
+    .desktop-4k-vector {
+        display: block;
+        width: 30px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .desktop-text-vector {
+        display: block;
+        width: 241px;
+        position: absolute;
+        bottom: 104px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text{
+        width: 272px;
+    }
+}
+
+/* 4K - 3840px */
+@media (min-width: 3840px) {
+    .fourk-image {
+        display: block;
+        width: 785px;
+    }
+
+    .desktop-4k-vector {
+        display: block;
+        width: 30px;
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .desktop-text-vector {
+        display: block;
+        width: 289px;
+        position: absolute;
+        bottom: 174px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text{
+        width: 272px;
+    }
+}
+
