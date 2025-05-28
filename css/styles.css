@@ -50,7 +50,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-4k-vector {
         display: block;
-        width: 8px;
+        width: 12px;
         position: absolute;
         bottom: 30px;
         left: 50%;
@@ -59,7 +59,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-text-vector {
         display: block;
-        width: 193px;
+        width: 189px;
         position: absolute;
         bottom: 49px;
         left: 50%;
@@ -89,16 +89,16 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-4k-vector {
         display: block;
-        width: 16px;
+        width: 24px;
         position: absolute;
-        bottom: 50px;
+        bottom: 41px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .desktop-text-vector {
         display: block;
-        width: 217px;
+        width: 213px;
         position: absolute;
         bottom: 88px;
         left: 50%;
@@ -128,7 +128,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-4k-vector {
         display: block;
-        width: 19px;
+        width: 24px;
         position: absolute;
         bottom: 50px;
         left: 50%;
@@ -137,9 +137,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-text-vector {
         display: block;
-        width: 241px;
+        width: 213px;
         position: absolute;
-        bottom: 92px;
+        bottom: 88px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -177,7 +177,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
     .desktop-text-vector {
         display: block;
-        width: 241px;
+        width: 236px;
         position: absolute;
         bottom: 104px;
         left: 50%;
